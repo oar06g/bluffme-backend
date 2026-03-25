@@ -4,6 +4,6 @@ class BluffMe:
   def __init__(self):
     self.router = APIRouter()
 
-    @self.router.get("/")
-    def read_root():
+    @self.router.get("/create-room")
+    def create():
       return {"Hello": "World"}
